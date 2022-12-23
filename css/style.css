@@ -1,19 +1,24 @@
 /* styles.css */
 
+body {
+    background-image: url("../images/jojoimg.jpg");
+}
+
 .heading {
+    color: white;
     font-weight: bold;
     font-family: "Helvetica";
 }
 
-.box {
+/* .box {
     max-width: 1000px;
     margin: 0 auto;
 
-    padding: 1em;
+    padding: 1em;x`
     border-radius: .5em;
     border: 5px solid rebeccapurple;
     background-color: whitesmoke;
-}
+} */
 
 .text {
     font-family: "Brush Script MT", "Lucida Console", cursive;
@@ -23,12 +28,25 @@
 
 .label {
     font-family: "Helvetica";
+    color: white;
+}
+
+#main {
+    color: black;
 }
 
 .container {
-    background: white;
-    width: 70%;
+    background: #f7fac2;
+    width: 300px;
     max-width: 1000px;
     margin: 0 auto;
+    padding: 5px;
+    border: solid;
+    border-radius: 20px;
+    border-color: aliceblue;
+    text-align: center;
+    box-sizing: border-box;
+
+    display: block;
     
 }
