@@ -4,49 +4,90 @@ body {
     background-image: url("../images/jojoimg.jpg");
 }
 
-.heading {
-    color: white;
+.heading-container {
+    color: black;
     font-weight: bold;
     font-family: "Helvetica";
+    width: fit-content;
+    padding: 8px;
+    text-shadow: #ffccff;
+    
+    background-color: gold;
+    border-radius: 5px;
 }
 
-/* .box {
-    max-width: 1000px;
-    margin: 0 auto;
+a, a:visited {
+    text-decoration: none;
+    color: black;
+}
 
-    padding: 1em;x`
-    border-radius: .5em;
-    border: 5px solid rebeccapurple;
-    background-color: whitesmoke;
-} */
+a:hover {
+    background-color: gold;
+}
 
-.text {
+.display-image {
+    border-width: 32px;
+    border-color: crimson
+}
+
+.text-container {
     font-family: "Brush Script MT", "Lucida Console", cursive;
     color:#3333cc;
     background-color: #ffccff;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 8px;
 }
 
 .label {
     font-family: "Helvetica";
-    color: white;
-}
-
-#main {
     color: black;
+
+    background-color: gold;
 }
 
-.container {
+.recipe-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #f7fac2;
-    width: 300px;
+    width: 1600px;
     max-width: 1000px;
     margin: 0 auto;
     padding: 5px;
-    border: solid;
-    border-radius: 20px;
-    border-color: aliceblue;
-    text-align: center;
-    box-sizing: border-box;
 
-    display: block;
+    border-color: aliceblue;
+    border-style: groove;
+    /* box-sizing: border-box;  */
+    border-width: 10px;
     
+}
+
+.recipe {
+    flex: 1 1 auto;
+    background-color: lightcoral;
+    width: 0px;
+
+    margin: 8px;
+    padding: 8px;
+
+    text-align: center;
+    font-size: 30px;
+}
+
+.main-title {
+    display: flex;
+    justify-content: center;
+    max-width: fit-content;
+    background-color: #f7fac2;
+    margin: 0 auto;
+    
+    border-style: groove;
+    border-width: 10px;
+    
+}
+
+.short-text { /* maybe not required, find a better way*/
+    align-self: stretch;
+    padding:
 }
