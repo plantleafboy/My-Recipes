@@ -2,6 +2,8 @@
 
 body {
     background-image: url("../images/jojoimg.jpg");
+    height: 100%;
+    border: 3px solid black;
 }
 
 .heading-container {
@@ -46,7 +48,7 @@ a:hover {
     background-color: gold;
 }
 
-.recipe-box {
+.recipe-box {   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,15 +66,18 @@ a:hover {
 }
 
 .recipe {
-    flex: 1 1 auto;
+    flex: auto;
     background-color: lightcoral;
-    width: 0px;
 
     margin: 8px;
     padding: 8px;
 
     text-align: center;
+    line-height: inherit;
+
     font-size: 30px;
+    font-family: monospace;
+    /* font-family: "Fantasy", "Copperplate"; */
 }
 
 .main-title {
@@ -90,4 +95,46 @@ a:hover {
 .short-text { /* maybe not required, find a better way*/
     align-self: stretch;
     padding:
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: tan;
+    margin: 16px;
+    height: 150px;
+    /* margin: 200px;
+    height: 100px; */
+    padding: 10px;
+    gap: 8px;
+
+}
+
+.boxchild-one {
+    flex: none;
+    width: 90px;
+    height: 90px;
+    border: 2px solid blueviolet;
+    background-color: yellow;
+    padding: 8px;
+
+    text-align: center;
+    line-height: 90px;
+}
+.boxchild-three {
+    flex: none;
+    width: 90px;
+    height: 90px;
+    border: 2px solid blue;
+    background-color: white;
+    padding: 8px;
+}
+.boxchild-two {
+    flex: none;
+    width: 90px;
+    height: 90px;
+    border: 2px solid blue;
+    background-color: green;
+    padding: 8px;
 }
